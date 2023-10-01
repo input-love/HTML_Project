@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    justify-content: center; /* Выравниваем по центру по горизонтали */
+    align-items: center; /* Выравниваем по центру по вертикали */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравниваем по центру по горизонтали */
+    margin: 20px; /* Отступ между карточками */
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Пример разделения на категории */
+.menu-category {
+    grid-column: span 2; /* Элементы в два столбца */
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
